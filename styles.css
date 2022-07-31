@@ -1,0 +1,176 @@
+body {
+  display: flex;
+  font-family: "Arvo", serif;
+  flex-direction: column;
+}
+
+.background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -4;
+  height: 100vh;
+}
+
+.Navmenu {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  left: -100vw;
+  top: 0vh;
+  background-color: transparent;
+  overflow-x: hidden;
+  transition: left 1s, opacity 1s;
+  opacity: 0;
+  transition-timing-function: ease-in;
+}
+
+nav {
+  left: 80px;
+  position: relative;
+  overflow: hidden;
+  width: 80vw;
+  height: 80px;
+}
+
+.Navmenuopen {
+  left: 0vw;
+  opacity: 1;
+}
+.Navmenu[hidden] {
+  left: -100vw;
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.Navmenu-content {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  width: 100vw;
+  text-align: center;
+}
+.menubutton {
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  max-height: 60px;
+  max-width: 60px;
+  z-index: 1000;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.hamburger {
+  max-width: 100%;
+  height: auto;
+  transition: width 2s, height 2s, transform 2s;
+}
+.menubutton:hover .hamburger {
+  transform: rotate(-360deg);
+}
+.mebutton {
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  left: 25vw;
+  max-height: 60px;
+  max-width: 60px;
+  z-index: 1000;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.imgme {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.mebutton:hover .imgme {
+  transform: rotate(-360deg);
+}
+
+.workbutton {
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  left: 40vw;
+  max-height: 60px;
+  max-width: 60px;
+  z-index: 1000;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.imgwork {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.workbutton:hover .imgwork {
+  transform: rotate(-360deg);
+}
+
+.contactbutton {
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  left: 55vw;
+  max-height: 60px;
+  max-width: 60px;
+  z-index: 1000;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.imgcontact {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: width 2s, height 2s, transform 2s;
+}
+.contactbutton:hover .imgcontact {
+  transform: rotate(-360deg);
+}
+
+.switchmodebutton {
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  left: 70vw;
+  max-height: 60px;
+  max-width: 60px;
+  z-index: 1000;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.imgswitchmode {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: width 2s, height 2s, transform 2s;
+}
+.switchmodebutton:hover .imgswitchmode {
+  transform: rotate(-360deg);
+}
+
+.dark-mode {
+  filter: invert(100%);
+}
